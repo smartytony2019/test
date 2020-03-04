@@ -28,9 +28,9 @@ public class NacosProviderApplication {
 		@Value("${server.port}")
 		private String port;
 
-		@RequestMapping(value = "/echo/{string}", method = RequestMethod.GET)
-		public String echo(@PathVariable String string) {
-			return "Hello Nacos Discovery i am port:" + port;
+		@RequestMapping(value = "/echo/{message}", method = RequestMethod.GET)
+		public String echo(@PathVariable String message) {
+			return "Hello"+ message +" Nacos Discovery i am port:" + port;
 		}
 	}
 }
