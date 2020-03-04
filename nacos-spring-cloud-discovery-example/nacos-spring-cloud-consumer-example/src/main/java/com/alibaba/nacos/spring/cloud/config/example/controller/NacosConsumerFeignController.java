@@ -1,9 +1,8 @@
-package com.alibaba.nacos.example.spring.cloud.controller;
+package com.alibaba.nacos.spring.cloud.config.example.controller;
 
-import com.alibaba.nacos.example.spring.cloud.service.EchoService;
+import com.alibaba.nacos.spring.cloud.config.example.service.EchoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController

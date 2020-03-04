@@ -1,4 +1,4 @@
-package com.alibaba.nacos.example.spring.cloud.service;
+package com.alibaba.nacos.spring.cloud.config.example.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

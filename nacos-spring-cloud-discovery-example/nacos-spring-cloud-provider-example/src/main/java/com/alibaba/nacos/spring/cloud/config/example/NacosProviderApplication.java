@@ -1,4 +1,4 @@
-package com.alibaba.nacos.example.spring.cloud;
+package com.alibaba.nacos.spring.cloud.config.example;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
