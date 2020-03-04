@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class ConfigController {
 
 
+    @Value("${server.port}")
+    private String port;
+
     // 注入配置文件上下文
     @Autowired
     private ConfigurableApplicationContext applicationContext;
@@ -23,7 +26,7 @@ public class ConfigController {
 
     @GetMapping("/port")
     public String getPort() {
-        return "server port";
+        return "server port"+port;
     }
 
 }
