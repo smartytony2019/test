@@ -1,14 +1,14 @@
-package com.alibaba.nacos.spring.cloud.rocketmq.provider;
-
+package com.alibaba.nacos.spring.cloud.rocketmq.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RocketMQConsumerApplication {
+public class RocketMQProviderApplication {
+
 
     public static void main(String[] args) {
-        SpringApplication.run(RocketMQConsumerApplication.class,args);
+        SpringApplication.run(RocketMQProviderApplication.class, args);
     }
 
 }
