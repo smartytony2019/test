@@ -30,7 +30,16 @@ public class NacosProviderApplication {
 
 		@RequestMapping(value = "/echo/{message}", method = RequestMethod.GET)
 		public String echo(@PathVariable String message) {
-			return "Hello"+ message +" Nacos Discovery i am port:" + port;
+			return "jackaaaaaaaaaaaaa"+ message +" Nacos 213333213333Discovery i am port:" + port;
 		}
+
+
+		@RequestMapping(value = "/test/{message}", method = RequestMethod.GET)
+		public String test(@PathVariable String message) {
+			return "213333"+ message +" tes213333t" + port;
+		}
+
+
+
 	}
 }

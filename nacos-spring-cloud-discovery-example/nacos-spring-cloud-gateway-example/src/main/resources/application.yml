@@ -1,3 +1,5 @@
+server:
+  port: 9000
 spring:
   application:
     # 应用名称
@@ -18,21 +20,25 @@ spring:
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
       # 配置路由规则
       routes:
-        - id: setstatus_route
-          uri: lb://service-config
-          predicates:
-            - Path=/config/**
-            - Method=GET
-        - id: setstatusshortcut_route
+        - id: service-consumer
           uri: lb://service-consumer
           predicates:
-            - Path=/consumer
+            - Path=/consumer/**
             - Method=GET
+          filters:
+            - StripPrefix=1
 
-server:
-  port: 9000
+        - id: service-provider
+          uri: lb://service-provider
+          predicates:
+            - Path=/provider/**
+            - Method=GET
+          filters:
+            - StripPrefix=1
+
 
 # 目前无效
 feign:

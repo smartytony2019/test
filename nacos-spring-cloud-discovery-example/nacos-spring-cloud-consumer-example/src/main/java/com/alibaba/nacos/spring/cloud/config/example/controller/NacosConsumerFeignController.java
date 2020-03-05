@@ -13,7 +13,7 @@ public class NacosConsumerFeignController {
 
     @GetMapping(value = "/echo/hi")
     public String echo() {
-        return echoService.echo("hi feign");
+        return echoService.echo("hi feign2222222");
     }
 
 }
